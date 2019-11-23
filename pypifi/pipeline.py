@@ -12,3 +12,4 @@ class Pipeline(object):
     def execute(self, message):
         for filter in self.filters:
             filter.process(message)
+        return message
